@@ -64,10 +64,10 @@
 
 .send-container button {
     height: 26px;
+    line-height: 26px;
     width: 120px;
     color: #8f8a98;
     margin-top: 20px;
-    padding: 5px 10px;
     background-color: #fff;
     font-size: 16px;
     font-weight: 600;
