@@ -26,10 +26,10 @@ class QuitItem extends React.Component {
                     ? <InputComponent data={this.props.data}></InputComponent>
                         :data[0] === 1
                         ?
-                            <span  className='select-relative'>
+                            <div  className='select-relative'>
                                 <InputComponent salary={this.state.salary || ''} isSelect={this.state.isSelect} data={this.props.data}  showSelectHandle={this.showSelectHandle.bind(this)}></InputComponent>
                                 <SelectComponent addClass={this.state.addClass} isSelect={this.state.isSelect} clickHandle={this.clickSelectHandle.bind(this)}/>
-                            </span>
+                            </div>
                         :''
                 }
             </div>

@@ -1,49 +1,52 @@
 .Quiz-container {
-  position: absolute;
-  margin-top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateY(-20%);
+    transform: translateX(-50%);
+    width: 100%;
 }
 
-
 .input-container {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .input-container span {
-  font-size: 18px;
-  color: #efeff1;
+    font-size: 18px;
+    color: #efeff1;
 }
 
- input {
-  margin: 0 6px;
-  padding: 10px 16px;
-  width: 240px;
-  height: 20px;
-  outline: none;
-  vertical-align: middle;
-  font-size: 18px;
-  border-radius: 40px;
-  border: 1px solid #3b2a60;
-  color: #efeff1;
-  background-color: #1f1633;
+input {
+    margin: 0 6px;
+    padding: 10px 16px;
+    width: 240px;
+    height: 20px;
+    outline: none;
+    vertical-align: middle;
+    font-size: 18px;
+    border-radius: 40px;
+    border: 1px solid #3b2a60;
+    color: #efeff1;
+    background-color: #1f1633;
 }
 
-@media screen and (max-width: 875px){
-  .input-container {
-    text-align: center;
-    margin-bottom: 0;
-  }
+@media screen and (max-width: 875px) {
+    .Quiz-container {
+        top: 10%;
+    }
 
-  input, span {
-   display: block;
-   margin: 4px auto;
-  }
+    .input-container {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    input, span {
+        display: block;
+        margin: 4px auto;
+    }
 
 }
-
 
 .input-focus {
     border: 1px solid #163e5a;
@@ -56,7 +59,6 @@
 .input-normal {
     border: 1px solid #3b2a60;
 }
-
 
 .send-container {
     text-align: center;

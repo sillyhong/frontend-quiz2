@@ -24,11 +24,11 @@ class　InputComponent extends React.Component {
                 ?<input className={ this.state.inputNormal || this.getClassName()} onBlur={this.blurHandle.bind(this)} onFocus={this.focusHandle.bind(this)} type="text"/>
                     :this.props.data[0] === 1
                         ?//有弹出效果的输入框
-
+                        (
                             this.props.isSelect ?
-                            <input value={this.props.salary} className={'select-relative '+  this.state.inputNormal || this.getClassName() } onClick={this.clickHandle.bind(this)} onBlur={this.blurHandle.bind(this)} onFocus={this.focusHandle.bind(this)} type="text" />
+                            <input value={this.props.salary} className={this.state.inputNormal || this.getClassName() } onClick={this.clickHandle.bind(this)} onBlur={this.blurHandle.bind(this)} onFocus={this.focusHandle.bind(this)} type="text" readOnly/>
                             :<input className={this.state.inputNormal || this.getClassName() }  onBlur={this.blurHandle.bind(this)} onFocus={this.focusHandle.bind(this)} type="text"/>
-
+                        )
                         ://需要验证邮箱的输入框
                             <input className={ this.state.inputNormal || this.getClassName()} onChange={this.changeHandle.bind(this)} onBlur={this.blurHandle.bind(this)} onFocus={this.focusHandle.bind(this)} type="text"/>
 

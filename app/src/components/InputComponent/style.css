@@ -1,4 +1,5 @@
 .select-relative {
     position: relative;
     display: inline-block;
+    margin: 0 auto;
 }
